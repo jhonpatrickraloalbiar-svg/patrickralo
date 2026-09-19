@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jhon Patrick Albiar | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Rainbow background */
+        .rainbow-bg {
+            background: linear-gradient(
+                135deg,
+                #ff6b6b,
+                #ff9f43,
+                #feca57,
+                #1dd1a1,
+                #54a0ff,
+                #5f27cd,
+                #ff6bcb
+            );
+        }
+
+        /* Rainbow animation */
+        .rainbow-text {
+            background: linear-gradient(
+                90deg,
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet
+            );
+
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: rainbow 6s ease infinite;
+        }
+
+        @keyframes rainbow {
+
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+
+        /* Rainbow border */
+        .rainbow-border {
+            border: 5px solid transparent;
+
+            background:
+                linear-gradient(white, white) padding-box,
+                linear-gradient(
+                    90deg,
+                    red,
+                    orange,
+                    yellow,
+                    green,
+                    blue,
+                    purple
+                ) border-box;
+        }
+
+        /* Gallery scrollbar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            scrollbar-width: none;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 text-gray-800">
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="fixed top-0 left-0 w-full z-50
+            bg-white/95 backdrop-blur
+            shadow-lg">
+
+    <div class="max-w-6xl mx-auto
+                px-6 py-4
+                flex items-center
+                justify-between">
+
+        <a href="#home"
+           class="text-2xl font-extrabold rainbow-text">
+
+            J.P. Albiar
+
+        </a>
+
+
+        <div class="hidden md:flex
+                    items-center gap-8
+                    font-semibold">
+
+            <a href="#home"
+               class="text-red-500 hover:text-red-700">
+                Home
+            </a>
+
+            <a href="#about"
+               class="text-orange-500 hover:text-orange-700">
+                About
+            </a>
+
+            <a href="#gallery"
+               class="text-green-500 hover:text-green-700">
+                Gallery
+            </a>
+
+            <a href="#contact"
+               class="text-purple-500 hover:text-purple-700">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home"
+         class="min-h-screen
+                pt-24
+                flex items-center
+                rainbow-bg">
+
+    <div class="max-w-6xl
+                mx-auto
+                w-full
+                px-6">
+
+        <div class="flex
+                    flex-col
+                    md:flex-row
+                    items-center
+                    justify-center
+                    gap-10">
+
+
+            <!-- PROFILE IMAGE -->
+
+            <div>
+
+                <img src="TIKS.jpg"
+                     alt="Jhon Patrick Albiar"
+
+                     class="w-48 h-48
+                            md:w-56 md:h-56
+                            rounded-full
+                            object-cover
+                            border-8
+                            border-white
+                            shadow-2xl">
+
+            </div>
+
+
+
+            <!-- INTRODUCTION -->
+
+            <div class="text-center
+                        md:text-left">
+
+                <h1 class="text-4xl
+                           md:text-6xl
+                           font-extrabold
+                           text-white
+                           drop-shadow-lg">
+
+                    Jhon Patrick Albiar
+
+                </h1>
+
+
+                <p class="mt-4
+                          text-xl
+                          md:text-2xl
+                          text-white
+                          font-semibold
+                          drop-shadow">
+
+                   BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY AT CENTRAL PHILIPPINE STATE UNIVERSITY
+
+                </p>
+
+
+                <a href="#about"
+
+                   class="inline-block
+                          mt-7
+                          bg-white
+                          text-purple-600
+                          font-bold
+                          px-8
+                          py-3
+                          rounded-full
+                          shadow-xl
+                          hover:scale-105
+                          transition">
+
+                    Get to Know Me →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MOTIVATION -->
+
+            <div class="hidden lg:block
+                        text-white
+                        text-3xl
+                        italic
+                        font-bold
+                        drop-shadow-lg">
+
+                <p>
+
+                    Dream<br>
+                    Learn<br>
+                    Build<br>
+                    My Future
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about"
+         class="py-20
+                bg-gradient-to-br
+                from-yellow-50
+                via-pink-50
+                to-purple-50">
+
+    <div class="max-w-6xl
+                mx-auto
+                px-6">
+
+
+        <!-- TITLE -->
+
+        <div class="flex
+                    items-center
+                    justify-center
+                    gap-5
+                    mb-10">
+
+            <span class="w-20 h-1
+                         bg-red-500
+                         rounded-full">
+            </span>
+
+            <h2 class="text-4xl
+                       font-extrabold
+                       rainbow-text">
+
+                About Me
+
+            </h2>
+
+            <span class="w-20 h-1
+                         bg-purple-500
+                         rounded-full">
+            </span>
+
+        </div>
+
+
+
+        <!-- ABOUT CARD -->
+
+        <div class="bg-white
+                    rounded-3xl
+                    shadow-2xl
+                    p-8
+                    border-4
+                    border-pink-200">
+
+
+            <div class="grid
+                        md:grid-cols-2
+                        gap-10">
+
+
+                <!-- LEFT -->
+
+                <div class="md:border-r
+                            border-purple-200
+                            md:pr-8">
+
+                    <div class="flex
+                                items-start
+                                gap-4">
+
+
+                        <div class="w-14 h-14
+                                    rounded-full
+                                    bg-gradient-to-r
+                                    from-red-400
+                                    to-orange-400
+                                    flex items-center
+                                    justify-center
+                                    text-2xl">
+
+                            👤
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-xl
+                                       font-bold
+                                       text-red-500
+                                       mb-3">
+
+                                Hi, I’m Jhon Patrick Albiar.
+
+                            </h3>
+
+
+                            <p class="leading-relaxed
+                                      text-gray-700">
+
+                                I’m 19 years old and I am
+                                currently taking my Bachelor
+                                of Science in Information
+                                Technology at Central
+                                Philippines State University
+                                (CPSU).
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT -->
+
+                <div class="space-y-8">
+
+
+                    <!-- WHO AM I -->
+
+                    <div class="flex
+                                items-start
+                                gap-4">
+
+                        <div class="w-14 h-14
+                                    rounded-full
+                                    bg-gradient-to-r
+                                    from-green-400
+                                    to-blue-400
+                                    flex items-center
+                                    justify-center
+                                    text-2xl">
+
+                            💙
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-xl
+                                       font-bold
+                                       text-green-600">
+
+                                Who am I?
+
+                            </h3>
+
+
+                            <p class="text-gray-700
+                                      leading-relaxed">
+
+                                I love technology, playing
+                                online games, watching movies,
+                                listening to music, and spending
+                                time with my friends and family.
+                                I’m a simple person who enjoys
+                                little things in life and always
+                                looks forward to new experiences.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- GOAL -->
+
+                    <div class="flex
+                                items-start
+                                gap-4">
+
+                        <div class="w-14 h-14
+                                    rounded-full
+                                    bg-gradient-to-r
+                                    from-blue-500
+                                    to-purple-500
+                                    flex items-center
+                                    justify-center
+                                    text-2xl">
+
+                            🎯
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-xl
+                                       font-bold
+                                       text-purple-600">
+
+                                What is my goal in life?
+
+                            </h3>
+
+
+                            <p class="text-gray-700
+                                      leading-relaxed">
+
+                                My goal is to become a successful
+                                IT professional someday. I want
+                                to use my knowledge and skills
+                                in technology to build a better
+                                future and provide a good life
+                                for my family.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery"
+         class="py-20
+                bg-gradient-to-br
+                from-blue-50
+                via-white
+                to-pink-50">
+
+    <div class="max-w-6xl
+                mx-auto
+                px-6">
+
+
+        <!-- TITLE -->
+
+        <div class="flex
+                    items-center
+                    justify-center
+                    gap-5
+                    mb-10">
+
+            <span class="w-20 h-1
+                         bg-blue-500
+                         rounded-full">
+            </span>
+
+            <h2 class="text-4xl
+                       font-extrabold
+                       rainbow-text">
+
+                Gallery
+
+            </h2>
+
+            <span class="w-20 h-1
+                         bg-pink-500
+                         rounded-full">
+            </span>
+
+        </div>
+
+
+
+        <!-- GALLERY -->
+
+        <div class="relative">
+
+            <div id="galleryTrack"
+                 class="flex
+                        overflow-x-auto
+                        gap-5
+                        snap-x
+                        snap-mandatory
+                        hide-scrollbar
+                        pb-4">
+
+
+                <!-- IMAGE 1 -->
+
+                <div class="shrink-0
+                            w-full
+                            sm:w-[48%]
+                            lg:w-[24%]
+                            h-72
+                            rounded-2xl
+                            overflow-hidden
+                            shadow-xl
+                            snap-center
+                            rainbow-border">
+
+                    <img src="patrick.jpg"
+                         alt="Gallery Image 1"
+                         class="w-full h-full
+                                object-cover
+                                hover:scale-110
+                                transition
+                                duration-500">
+
+                </div>
+
+
+
+                <!-- IMAGE 2 -->
+
+                <div class="shrink-0
+                            w-full
+                            sm:w-[48%]
+                            lg:w-[24%]
+                            h-72
+                            rounded-2xl
+                            overflow-hidden
+                            shadow-xl
+                            snap-center
+                            rainbow-border">
+
+                    <img src="HELLO.jpg"
+                         alt="Gallery Image 2"
+                         class="w-full h-full
+                                object-cover
+                                hover:scale-110
+                                transition
+                                duration-500">
+
+                </div>
+
+
+
+                <!-- IMAGE 3 -->
+
+                <div class="shrink-0
+                            w-full
+                            sm:w-[48%]
+                            lg:w-[24%]
+                            h-72
+                            rounded-2xl
+                            overflow-hidden
+                            shadow-xl
+                            snap-center
+                            rainbow-border">
+
+                    <img src="IT123.jpg"
+                         alt="Gallery Image 3"
+                         class="w-full h-full
+                                object-cover
+                                hover:scale-110
+                                transition
+                                duration-500">
+
+                </div>
+
+
+
+                <!-- IMAGE 4 -->
+
+                <div class="shrink-0
+                            w-full
+                            sm:w-[48%]
+                            lg:w-[24%]
+                            h-72
+                            rounded-2xl
+                            overflow-hidden
+                            shadow-xl
+                            snap-center
+                            rainbow-border">
+
+                    <img src="BAYUT.jpg"
+                         alt="Gallery Image 4"
+                         class="w-full h-full
+                                object-cover
+                                hover:scale-110
+                                transition
+                                duration-500">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DOTS -->
+
+        <div class="flex
+                    justify-center
+                    gap-2
+                    mt-5">
+
+            <span class="w-3 h-3
+                         rounded-full
+                         bg-red-500">
+            </span>
+
+            <span class="w-3 h-3
+                         rounded-full
+                         bg-yellow-400">
+            </span>
+
+            <span class="w-3 h-3
+                         rounded-full
+                         bg-green-500">
+            </span>
+
+            <span class="w-3 h-3
+                         rounded-full
+                         bg-purple-500">
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="py-20
+                rainbow-bg">
+
+    <div class="max-w-6xl
+                mx-auto
+                px-6">
+
+
+        <!-- TITLE -->
+
+        <div class="flex
+                    items-center
+                    justify-center
+                    gap-5
+                    mb-12">
+
+            <span class="w-20 h-1
+                         bg-white
+                         rounded-full">
+            </span>
+
+            <h2 class="text-4xl
+                       font-extrabold
+                       text-white
+                       drop-shadow">
+
+                Contact Me
+
+            </h2>
+
+            <span class="w-20 h-1
+                         bg-white
+                         rounded-full">
+            </span>
+
+        </div>
+
+
+
+        <!-- CONTACT ITEMS -->
+
+        <div class="grid
+                    sm:grid-cols-2
+                    lg:grid-cols-4
+                    gap-8">
+
+
+            <!-- EMAIL -->
+
+            <div class="bg-white/90
+                        rounded-2xl
+                        p-5
+                        shadow-xl
+                        flex items-center
+                        gap-4">
+
+                <div class="w-14 h-14
+                            rounded-full
+                            bg-red-100
+                            flex items-center
+                            justify-center
+                            text-2xl">
+
+                    ✉️
+
+                </div>
+
+                <div>
+
+                    <p class="font-bold
+                              text-red-600">
+
+                        jhonpatrickalbiar@gmail.com
+
+                    </p>
+
+                    <p class="text-sm
+                              text-gray-500">
+
+                        Email
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="bg-white/90
+                        rounded-2xl
+                        p-5
+                        shadow-xl
+                        flex items-center
+                        gap-4">
+
+                <div class="w-14 h-14
+                            rounded-full
+                            bg-green-100
+                            flex items-center
+                            justify-center
+                            text-2xl">
+
+                    📞
+
+                </div>
+
+                <div>
+
+                    <p class="font-bold
+                              text-green-600">
+
+                        +63 9811802491
+
+                    </p>
+
+                    <p class="text-sm
+                              text-gray-500">
+
+                        Phone
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="bg-white/90
+                        rounded-2xl
+                        p-5
+                        shadow-xl
+                        flex items-center
+                        gap-4">
+
+                <div class="w-14 h-14
+                            rounded-full
+                            bg-blue-100
+                            flex items-center
+                            justify-center
+                            text-2xl">
+
+                    📍
+
+                </div>
+
+                <div>
+
+                    <p class="font-bold
+                              text-blue-600">
+
+                        Municipality of Calatrava
+
+                    </p>
+
+                    <p class="text-sm
+                              text-gray-500">
+
+                        Location
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FACEBOOK -->
+
+            <div class="bg-white/90
+                        rounded-2xl
+                        p-5
+                        shadow-xl
+                        flex items-center
+                        gap-4">
+
+                <div class="w-14 h-14
+                            rounded-full
+                            bg-purple-100
+                            flex items-center
+                            justify-center
+                            text-2xl
+                            font-bold">
+
+                    f
+
+                </div>
+
+                <div>
+
+                    <p class="font-bold
+                              text-purple-600">
+
+                        Jhon Patrick Albiar
+
+                    </p>
+
+                    <p class="text-sm
+                              text-gray-500">
+
+                        Facebook
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- KEEP GOING -->
+
+        <div class="flex
+                    items-center
+                    justify-center
+                    gap-4
+                    mt-12">
+
+            <span class="w-8 h-1
+                         bg-white
+                         rounded-full">
+            </span>
+
+            <p class="text-white
+                      font-bold
+                      italic
+                      text-xl
+                      tracking-widest">
+
+                KUDOS EVERYBODY 🌈
+
+            </p>
+
+            <span class="w-8 h-1
+                         bg-white
+                         rounded-full">
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-gray-900
+               text-white
+               text-center
+               py-5">
+
+    <p>
+        © 2026 Jhon Patrick Albiar.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
